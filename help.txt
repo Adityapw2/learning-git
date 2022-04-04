@@ -1,0 +1,56 @@
+1.
+sort = 
+    arr.sort(function(a,b){
+        return a-b
+    })
+2.
+string to array = string.split("")
+3.
+array to string = array.tostring()
+4. 
+frequency = 
+  string = string.split("")
+  arr = string.sort()
+  var object = {}
+  for(var i=0; i<arr.length; i++){
+      if(object[arr[i]]){
+          object[arr[i]]=object[arr[i]]+1
+      }
+          else{
+             object[arr[i]]=1 
+          }
+      
+  }
+  for(key in object){
+      console.log(key+"-" +object[key])
+
+5.
+slection sort
+n = array.length
+for(i=0 to n-1){
+    min = i
+    for(j=i+1 to n ){
+        if(arr[min]>arr[j]){
+            min = j
+        }
+        swap(array,min,i){
+            a. var temp = arr[min]
+            arr[min] = arr[i]
+            arr[i] = temp
+            b. arr[i,min] = arr[min,i]
+        }
+    }
+}     
+
+6.
+bubble sort
+for(i=0 to n-1){
+    for(j=0 to n-i-1){
+        if(arr[j]>arr[j+1]){
+            swap(arr,j,j+1)
+        }
+    }
+}
+7.
+
+      

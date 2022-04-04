@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="Gender" id="Gender" placeholder="Gender">
+        <option value="">Male</option>
+        <option value="">Female</option>
+    </select>
+    <input id="Age" type="number" placeholder="Age">
+    <button id="mf" onclick="Myf()">Submit</button>
+    <h3 id="Alert"></h3>
+</body>
+<script>
+    function Myf(){
+        // const Ag = document.getElementById('Age').innerText
+        document.getElementById('mf').innerText = "Do"
+        console.log(document.getElementById('Age').innerText)
+        if(document.getElementById('Age').innerText < 21){
+            document.getElementById('Alert').innerText = "Alert Not Valid Legal Age to Married"
+        }
+        else{
+            document.getElementById('Alert').innerText = "Alert Valid Legal Age to Married"
+        }
+    }
+</script>
+</html>
