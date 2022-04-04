@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #box{
+            font-size: x-large;
+            /* border: 1px solid black; */
+            width: 25%;
+            margin: auto;
+        }
+        #box>div{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+        <form onsubmit="displaydata()">
+            <div id="box">
+            <div>
+                <label>Month</label>
+                <select name="Month" id="dmon">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>MAy</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option value="">December</option>
+                </select>
+            </div>
+            <div>
+                <label>Income</label>
+                <input id="dinc" type="number" placeholder="Income">
+            </div>
+            <div>
+                <label>Expense</label>
+                <input id="dexp" type="number" placeholder="Expense">
+            </div>
+            <div style="margin-left: 70px;">
+                <input id="submit" type="submit" style="font-size: 30px; text-align: center; justify-content: center;">
+            </div>
+            
+        </div>
+        </form>
+        <div id="container">
+        <h2 id="Month"></h2>
+        <h2 id="Income"></h2>
+        <h2 id="Expense"></h2>
+        <h2 id="Saving"></h2>
+    </div>
+</body>
+<script type="text/javascript">
+    // document.getElementById('submit').addEventListener("onclick", displayData(event))
+function displayData(){
+    // event.preventdefault();
+var month = document.querySelector('#dmon').value
+var income = document.getElementById('dinc').value
+var expense = document.getElementById('dexp').value
+var Savings = income-expense
+var display = document.getElementById('container');
+document.writeln("Month" <br> month)
+document.getElementById('Month').innerText =  month
+document.getElementById('Income').innerText =  income
+document.getElementById('Expense').innerText =  expense
+document.getElementById('Saving').innerText =  Savings
+}
+localStorage.setItem('Month' , month)
+localStorage.setItem('Income' , income)
+localStorage.setItem('Expense' , expense)
+localStorage.setItem('Saving' , savings)
+</script>
+</html>
