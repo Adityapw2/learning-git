@@ -1,0 +1,30 @@
+*{
+    color: #4a4a4a;
+    font-size: 15px;
+}
+#footer{
+ width: 90%;
+ margin: auto;
+}
+#footer > .footerInfo{
+    display: block;
+}
+#footer > .footerInfo > #firstBox{
+    width: 40%;
+    border: 1px solid black;
+}
+#footer > .footerInfo > .secondBox{
+    width: 55%;
+    border: 1px solid black;
+}
+  a{
+      text-decoration: none;
+      color: #4a4a4a;
+  }
+  
+  .footerInfo>img:after{
+     content: hello;
+  }
+  .popularSearches{
+      margin: auto;
+  }
